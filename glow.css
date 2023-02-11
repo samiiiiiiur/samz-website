@@ -1,0 +1,42 @@
+body
+{ 
+background: rgb(0, 0, 0);
+}
+h2{
+    color: #fff;
+    text-align: center;
+    font-family: Helvetica ;
+    letter-spacing: 1px;
+}
+h1
+{
+
+font-size: 80px;
+font-weight: bold;
+color:rgb(255, 255, 255);
+letter-spacing: 10px;
+cursor: pointer;
+font-family: Helvetica ;
+text-align: center;
+}
+h1:hover
+{
+color: #fff;
+text-shadow:0 0 10px rgb(255, 255, 255),
+            0 0 20px rgb(255, 255, 255),
+            0 0 40px rgb(255, 255, 255),
+            0 0 80px rgb(255, 255, 255),
+            0 0 120px rgb(255, 255, 255);
+}
+a:hover
+{
+
+color: #fff;
+text-shadow:0 0 10px rgb(255, 255, 255),
+            0 0 20px rgb(255, 255, 255),
+            0 0 40px rgb(255, 255, 255),
+            0 0 80px rgb(255, 255, 255),
+            0 0 120px rgb(255, 255, 255);
+}
+
+
