@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sam's website</title>
+    <link rel="stylesheet" href="./css/blueimp-gallery.min.css" />
+    <link rel="stylesheet"   href="glow.css">
+</head>
+<style>
+
+a:link, a:visited {
+  
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: rgb(0, 0, 0);
+}
+
+</style>
+<body>
+  <h1>Collection: SHEPERDS </h1>
+  <h2><a href= "../index.html">back to home page</a></h2>
+  <!-- The Gallery as lightbox dialog, should be a document body child element -->
+<div
+id="blueimp-gallery"
+class="blueimp-gallery blueimp-gallery-controls"
+aria-label="image gallery"
+aria-modal="true"
+role="dialog"
+>
+<div class="slides" aria-live="polite"></div>
+<h3 class="title"></h3>
+<a
+  class="prev"
+  aria-controls="blueimp-gallery"
+  aria-label="previous slide"
+  aria-keyshortcuts="ArrowLeft"
+></a>
+<a
+  class="next"
+  aria-controls="blueimp-gallery"
+  aria-label="next slide"
+  aria-keyshortcuts="ArrowRight"
+></a>
+<a
+  class="close"
+  aria-controls="blueimp-gallery"
+  aria-label="close"
+  aria-keyshortcuts="Escape"
+></a>
+<a
+  class="play-pause"
+  aria-controls="blueimp-gallery"
+  aria-label="play slideshow"
+  aria-keyshortcuts="Space"
+  aria-pressed="false"
+  role="button"
+></a>
+<ol class="indicator"></ol>
+
+</div>
+
+
+
+
+
+<div id="links">
+  <a href="./images/pics/A.jpg" title="a">
+    <img src="./images/thumbs/A1675274098.jpg" alt="A" />
+  </a>
+  <a href="./images/pics/B1.jpg" title="b">
+    <img src="./images/thumbs/B11675274099.jpg" alt="B" />
+  </a>
+  <a href="./images/pics/B2.jpg" title="B2">
+    <img src="./images/thumbs/B21675274099.jpg" alt="B2" />
+  </a>
+  <a href="./images/pics/B3.jpg" title="B3">
+    <img src="./images/thumbs/B31675274100.jpg" alt="B3" />
+  </a>
+  <a href="./images/pics/B4.jpg" title="B4">
+    <img src="./images/thumbs/B41675274100.jpg" alt="B4" />
+  </a>
+  <a href="./images/pics/C1.jpg" title="C1">
+    <img src="./images/thumbs/C11675274101.jpg" alt="C1" />
+  </a>
+  <a href="./images/pics/C2.jpg" title="C2">
+    <img src="./images/thumbs/C21675274102.jpg" alt="C2" />
+  </a>
+  <a href="./images/pics/D1.jpg" title="D1">
+    <img src="./images/thumbs/D11675274102.jpg" alt="D1" />
+  </a>
+  <a href="./images/pics/D2.jpg" title="D2">
+    <img src="./images/thumbs/D21675274103.jpg" alt="D2" />
+  </a>
+  <a href="./images/pics/E.jpg" title="E">
+    <img src="./images/thumbs/E1675274104.jpg" alt="E" />
+  </a>
+  <a href="./images/pics/E2.jpg" title="E2">
+    <img src="./images/thumbs/E21675274104.jpg" alt="E2" />
+  </a>
+  <a href="./images/pics/F.jpg" title="F">
+    <img src="./images/thumbs/F1675274094.jpg" alt="F" />
+  </a>
+  <a href="./images/pics/G.jpg" title="G">
+    <img src="./images/thumbs/G1675274095.jpg" alt="G" />
+  </a>
+  <a href="./images/pics/H.jpg" title="H">
+    <img src="./images/thumbs/H1675274094.jpg" alt="H" />
+  </a>
+  <a href="./images/pics/I.jpg" title="I">
+    <img src="./images/thumbs/I1675274096.jpg" alt="I" />
+  </a>
+  <a href="./images/pics/J.jpg" title="J">
+    <img src="./images/thumbs/J1675274095.jpg" alt="J" />
+  </a>
+  <a href="./images/pics/J2.jpg" title="J">
+    <img src="./images/thumbs/J21675274097.jpg" alt="J" />
+  </a>
+  <a href="./images/pics/K.jpg" title="K">
+    <img src="./images/thumbs/K1675274096.jpg" alt="K" />
+  </a>
+  <a href="./images/pics/L.jpg" title="L">
+    <img src="./images/thumbs/L1675274097.jpg" alt="L" />
+  </a>
+  <a href="./images/pics/N.jpg" title="N">
+    <img src="./images/thumbs/N1675274098.jpg" alt="N" />
+  </a>
+</div>
+<!--     -->
+
+>
+  <!-- ... -->
+</div>
+
+
+
+
+</body>
+<script src="js/blueimp-gallery.min.js"></script>
+<script>
+  document.getElementById('links').onclick = function (event) {
+    event = event || window.event
+    var target = event.target || event.srcElement
+    var link = target.src ? target.parentNode : target
+    var options = { index: link, event: event }
+    var links = this.getElementsByTagName('a')
+    blueimp.Gallery(links, options)
+  }
+</script>
+</html>
